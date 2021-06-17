@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 /* Nav Bar */
@@ -21,22 +22,73 @@
   padding: 30px 10%;
 }
 .nav__links {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   list-style: none;
+}
+
+.home,
+.dropdown span,
+.contact {
+  font-size: 25px;
+}
+.home a,
+.contact a {
+  text-decoration: none;
+  color: black;
 }
 .nav__links li {
   display: inline-block;
   padding: 0px 50px;
-  font-size: 25px;
 }
-.nav__links li a {
+.nav__links a {
   transition: all 0.3s ease 0s;
-  text-decoration: none;
 }
-.nav__links li a:hover {
-  color: brown;
-}
+
 .right__icons {
   float: right;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+}
+.dropdown:hover .dropbtn {
+  background-color: #fcfadf;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Huge Logo */
@@ -57,30 +109,34 @@
   background-color: #c41f46;
   background-attachment: fixed;
   color: #f6eb16;
-  font-size: 45px;
+  font-size: 30px;
 }
 .shopfor h2 {
   align-items: center;
   align-content: center;
   text-align: center;
 }
-.shopfor li a {
-  color: #f6eb16;
-  font-size: 30px;
-  text-decoration: none;
-  text-align: center;
+
+.shopfor__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.shopfor li {
-  display: inline-block;
+.shopfor__listItem {
+  /* width: 50px; */
+  height: 50px;
+  padding: 30px;
   align-items: center;
-  margin: 10px;
-  padding: 45px;
+}
+.shopfor__listItem a {
+  text-decoration: none;
+  color: #f6eb16;
 }
 
 /* Items for display */
 .container1 {
   background-color: #fcfadf;
-
+  overflow-y: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,6 +165,7 @@
   position: relative;
   top: 60px;
   right: -90px;
+  height: 500px;
 }
 /* Buttons */
 .btn {
@@ -160,7 +217,7 @@
   padding: 15px;
 }
 .review {
-  background: ;
+  /* background: ; */
   padding: 30px;
 }
 .review img {

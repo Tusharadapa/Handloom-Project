@@ -26,28 +26,76 @@
   border-bottom: 5px solid #c41f46;
 }
 .nav__links {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   list-style: none;
+}
+
+.home,
+.dropdown span,
+.contact {
+  font-size: 25px;
+}
+.home a,
+.contact a {
+  text-decoration: none;
+  color: black;
 }
 .nav__links li {
   display: inline-block;
   padding: 0px 50px;
-  font-size: 25px;
 }
-.nav__links li a {
+.nav__links a {
   transition: all 0.3s ease 0s;
-  text-decoration: none;
 }
-.nav__links li a:hover {
-  color: brown;
-}
+
 .right__icons {
   float: right;
 }
-/* SlideShow */
-.text {
-  margin-bottom: 80px;
-  padding-bottom: 80px;
+
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+}
+.dropdown:hover .dropbtn {
+  background-color: #fcfadf;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* SlideShow */
+
 .slidershow {
   width: 700px;
   height: 400px;
