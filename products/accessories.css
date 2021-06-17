@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav Bar */
+
+.logo {
+  height: 70px;
+  width: auto;
+  cursor: pointer;
+}
+
+.header {
+  box-sizing: border-box;
+  padding: 0;
+  background-color: #fcfadf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+.nav__links {
+  list-style: none;
+}
+.nav__links li {
+  display: inline-block;
+  padding: 0px 50px;
+  font-size: 25px;
+}
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+.nav__links li a:hover {
+  color: brown;
+}
+.right__icons {
+  float: right;
+}
+
+.products img {
+  width: 400px;
+  height: 300px;
+}
+.products {
+  background-color: #fcfadf;
+}
+.products button {
+  color: rgb(243, 255, 74);
+  background-color: #cf1f45;
+  border: 0.5px solid #cf1f45;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.p1 {
+  display: flex;
+  padding: 50px;
+  width: 700px;
+  margin: 0 0 0 300px;
+}
+.p2 {
+  display: flex;
+  padding: 50px;
+  width: 700px;
+  left: 100%;
+  margin: 0 0 0 300px;
+}
+.p3 {
+  display: flex;
+  padding: 50px;
+  width: 700px;
+  margin: 0 0 0 300px;
+}
+.p1cont {
+  padding-left: 40px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.p2cont {
+  padding-right: 40px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.p3cont {
+  padding-left: 40px;
+  padding-top: 50px;
+  text-align: center;
+}
